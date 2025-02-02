@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { useMotionValue, useSpring } from "motion/react";
 import { Heading } from "./heading";
@@ -32,7 +32,7 @@ const stats: Stat[] = [
 ];
 
 export default function Sponsors() {
-  const [inView, setInView] = React.useState(false);
+  const [inView, setInView] = useState(false);
   const statRef = React.useRef(null);
 
   React.useEffect(() => {

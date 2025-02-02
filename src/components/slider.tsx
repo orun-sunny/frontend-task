@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useMotionValue } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -64,7 +64,7 @@ export const Slider = ({
   data = tabContent,
   intervalDuration = 8,
 }: TabCarouselProps) => {
-  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = React.useState(false);
   const handleIndexClick = (index: number) => setActiveIndex(index);
 
@@ -80,7 +80,7 @@ export const Slider = ({
     }
   };
 
-  const intervalId = React.useRef<NodeJS.Timeout>(null);
+  const intervalId = useRef<NodeJS.Timeout>(null);
 
   React.useEffect(() => {
     if (isPaused) return;

@@ -6,7 +6,7 @@ import { BackgroundImages } from "./BackgroundImages";
 import { useState } from "react";
 
 export default function Intro() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered] = useState(false);
   return (
     <section className="overflow-x-hidden lg:[clip-path:polygon(0_0,100%_0,100%_85%,0_100%)] relative group">
       <div className="absolute inset-12 transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-80">

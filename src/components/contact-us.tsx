@@ -4,7 +4,7 @@ import { Button } from "./button";
 import { Heading } from "./heading";
 import { useState } from "react";
 export default function ContactUs() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered,] = useState(false);
   return (
     <section
       className="py-44 bg relative"

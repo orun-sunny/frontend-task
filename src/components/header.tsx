@@ -11,6 +11,7 @@ import {
   AnimatePresence,
 } from "motion/react";
 import BrandLogo from "./brand-logo";
+import Image from "next/image";
 
 interface NavigationItem {
   label: string;
@@ -96,16 +97,16 @@ export function Header() {
         <div className="flex items-center justify-between relative">
           <div className="flex-1 shrink-0">
             <Link className="text-white" href="/">
-              {/* <BrandLogo /> */}
+              <BrandLogo />
             </Link>
           </div>
           <nav className="hidden lg:flex justify-center gap-8">
             <MainNavigation position={position} />
           </nav>
           <div className="hidden lg:flex justify-end flex-1 shrink-0">
-            {/* <Button variant={position === "absolute" ? "outline" : "primary"}>
+            <Button variant={position === "absolute" ? "outline" : "primary"}>
               Contact Us
-            </Button> */}
+            </Button>
           </div>
           <div className="lg:hidden">
             <MobileNav position={position} />
@@ -141,7 +142,7 @@ function NavigationMenu({ items, position }: NavigationMenuProps) {
         </li>
       ))}
       <li>
-        {/* <button
+        <button
           type="button"
           className={cn(
             "rounded-full border py-2 px-7 mx-4",
@@ -149,7 +150,7 @@ function NavigationMenu({ items, position }: NavigationMenuProps) {
           )}
         >
           Eng
-        </button> */}
+        </button>
       </li>
     </>
   );
@@ -203,7 +204,16 @@ function MobileNav({ position }: { position: string }) {
                 ))}
               </ul>
               <div className="w-full sm:px-20">
-                {/* <Button className="w-full">Contact Us</Button> */}
+                <Button className="w-full">
+                  Contact Us
+                  <Image
+                    src="assets/icons/ChevronRightWhite.svg"
+                    alt="chevron right"
+                    width={5}
+                    height={5}
+                    className={"h-3.5 w-3.5 mt-1 transition-all duration-300"}
+                  />
+                </Button>
               </div>
             </div>
           </motion.div>

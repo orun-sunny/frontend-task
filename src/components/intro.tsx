@@ -3,31 +3,14 @@ import { Heading } from "./heading";
 import { Button } from "./button";
 import { BackgroundImages } from "./BackgroundImages";
 
+import { useState } from "react";
+
 export default function Intro() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <section className="overflow-x-hidden lg:[clip-path:polygon(0_0,100%_0,100%_85%,0_100%)] relative group">
       <div className="absolute inset-12 transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-80">
         <BackgroundImages />
-        {/* <img
-          src="/assets/backgrounds/WaveLinesDesktop1.svg"
-          alt="Wave pattern 1"
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        />
-        <img
-          src="/assets/backgrounds/WaveLinesDesktop1.svg"
-          alt="Wave pattern 1"
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        />
-        <img
-          src="/assets/backgrounds/WaveLinesDesktop1.svg"
-          alt="Wave pattern 1"
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        />
-        <img
-          src="/assets/backgrounds/WaveLinesDesktop1.svg"
-          alt="Wave pattern 1"
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        /> */}
       </div>
 
       <div className="size-full absolute inset-0 -z-10">
@@ -52,7 +35,18 @@ export default function Intro() {
               Reimagine financial services with AnyTech&apos;s open platform,
               distributed banking solution that powers transformation
             </p>
-            {/* <Button>React Out to Us</Button> */}
+            <Button>
+              React Out to Us
+              <Image
+                src="assets/icons/ChevronRightWhite.svg"
+                alt="chevron right"
+                width={5}
+                height={5}
+                className={`h-3.5 w-3.5 mt-1 transition-all duration-300 ${
+                  isHovered ? "translate-x-1.5" : "translate-x-0"
+                }`}
+              />
+            </Button>
           </div>
         </div>
 

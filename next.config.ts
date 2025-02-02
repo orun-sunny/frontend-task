@@ -5,3 +5,8 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+module.exports = {
+  images: {
+    domains: ['cdn.sanity.io'], // Add your external image domain here
+  },
+}

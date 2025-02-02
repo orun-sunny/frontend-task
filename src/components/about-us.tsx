@@ -17,7 +17,8 @@ export default function AboutUs() {
               <div className="relative inline-block">
                 <div className="absolute -inset-x-20 animate-move-up-down">
                   <Image
-                    className="size-full"
+                    className={`absolute top-10 left-20 w-full h-full object-cover transition-transform duration-3 scale-110 opacity-40
+                    }`}
                     src="/assets/story.svg"
                     width={600}
                     height={600}
@@ -135,7 +136,7 @@ export default function AboutUs() {
               </div>
               <Image
                 className="object-cover w-[425px] h-[500px] relative shadow-2xl"
-                src="/assets/intro/intro.avif"
+                src="https://cdn.sanity.io/images/6jywt20u/production/5ca8af1a922b106b962c34781483bc8e6e066688-1124x1364.png?w=960&auto=format"
                 width={400}
                 height={400}
                 alt="AnyTech product interface showcase"

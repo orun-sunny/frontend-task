@@ -97,10 +97,10 @@ export default function AboutUs() {
                   priority
                 />
               </div>
-              <div className="size-10 absolute top-44 left-10 animate-move-up-down z-10">
+              <div className="size-16 absolute top-44 left-10 animate-move-up-down z-10">
                 <Image
                   className="object-cover size-full"
-                  src="/assets/icon-1.svg"
+                  src="/assets/icon-3.svg"
                   fill
                   alt="Decorative floating icon 1"
                 />
@@ -114,9 +114,9 @@ export default function AboutUs() {
               >
                 <Image
                   className="object-cover size-full"
-                  src="/assets/icon-2.svg"
+                  src="/assets/icon-1.svg"
                   fill
-                  alt="Decorative floating icon 2"
+                  alt="Decorative floating icon 3"
                 />
               </div>
               <div
@@ -128,7 +128,7 @@ export default function AboutUs() {
               >
                 <Image
                   className="object-cover size-full"
-                  src="/assets/icon-3.svg"
+                  src="/assets/icon-2.svg"
                   fill
                   alt="Decorative floating icon 3"
                 />

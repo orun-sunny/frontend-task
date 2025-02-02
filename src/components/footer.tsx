@@ -20,6 +20,7 @@ export default function Footer() {
               <Link className="font-bold" href="/">
                 Our Solutions
               </Link>
+              <hr />
               <Link className="hidden md:block" href="/">
                 AnyCaas
               </Link>
